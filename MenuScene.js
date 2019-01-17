@@ -202,11 +202,14 @@ function MenuScene(){
 
       m.lookAt({x:0,y:0,z:0});
 
+      console.log("OkLook")
       addToScope(StaticObj3d(m));
 
       addToScope(animate(350,function(p){
         material.opacity = interp(p,0.0,0.8);
         m.material.opacity = interp(p,0.0,0.8);
+              console.log("animate after 350?")
+
       },0));
 
       var result;
