@@ -547,7 +547,6 @@ function MenuScene(){
 
       function activateBall(){
 
-                  console.log("activate ball")
 
         (function(){
           // hover animation to accent depth
