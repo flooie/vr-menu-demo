@@ -112,9 +112,7 @@ function main(root, metaScene) {
 
         renderer.setSize(WIDTH, HEIGHT);
         root.appendChild(renderer.domElement);
-        root.appendChild(logo.domElement);
         
-        root.appendChild("hello World")
         
         var camera = new THREE.PerspectiveCamera(75, WIDTH / HEIGHT, 0.1, 1000);
         var controls = new THREE.VRControls(camera);
