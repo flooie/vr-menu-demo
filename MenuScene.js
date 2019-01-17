@@ -655,6 +655,7 @@ function MenuScene(){
             addToScope(addVirtualScreen(choices));
 
             return function(){
+              console.log("OK are we called here?")
               activateBall();
               return ballHandler
             }
