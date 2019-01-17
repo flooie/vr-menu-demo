@@ -157,6 +157,9 @@ function main(root, metaScene) {
         }
 
         function lookup(i) {
+          
+          console.log("LOOKUP")
+          console.log(i)
           return scope[i];
         }
 
