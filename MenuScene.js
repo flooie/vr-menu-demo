@@ -2,7 +2,7 @@
 function MenuScene(){
 
   var royalBlue = 0x0076f3;
-//   var royalBlue = 0x990000;
+  var crimson = 0x990000;
   var shaders;
   var textures;
 
@@ -179,7 +179,7 @@ function MenuScene(){
 
       var material =
         new THREE.MeshBasicMaterial( {
-          color: interpColor(0.0,royalBlue,0xffffff)
+          color: interpColor(0.0,crimson,0xffffff)
         , transparent:true
         , opacity:0.0
         } );
