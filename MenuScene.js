@@ -681,6 +681,8 @@ function MenuScene(){
             
             return function(){
               console.log("OK are we called here?")
+              
+              window.location.href = "https://flooie.github.io/vr-menu-demo/"
               activateBall();
               return ballHandler
             }
