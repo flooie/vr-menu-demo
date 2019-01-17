@@ -342,10 +342,10 @@ function MenuScene(){
         screen.material.opacity = interp(p,0.0,screenOpacity);
         skeleton.material.opacity = interp(p,0.0,skeletonOpacity);
 
-        console.log("screen")
-        console.log("skeleton")
-        console.log(screen)
-        console.log(skeleton)
+//         console.log("screen")
+//         console.log("skeleton")
+//         console.log(screen)
+//         console.log(skeleton)
         
         screen.position.z = interp(p,zAnimOffset,zRestingOffset);
         skeleton.position.z = interp(p,zAnimOffset,zRestingOffset);
