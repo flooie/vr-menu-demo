@@ -1,8 +1,8 @@
 
 function MenuScene(){
 
-//   var royalBlue = 0x0076f3;
-  var royalBlue = 0x990000;
+  var royalBlue = 0x0076f3;
+//   var royalBlue = 0x990000;
   var shaders;
   var textures;
 
