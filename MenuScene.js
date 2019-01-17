@@ -575,7 +575,6 @@ function MenuScene(){
             shadow.material.opacity = shadowOpacity - 0.12 * p;
             shadow.position.z = baseSHZ + magnitude * 0.02 * (p * p);
 
-              console.log(icon)
             
 
             var s = 0.98 + 0.012 * (p * p);
