@@ -634,14 +634,21 @@ function MenuScene(){
       function ballHandler(v){
 
         
-                  console.log("ball handler")
+          console.log("ball handler")
           console.log(v)
+        console.log(lookDownRef)
+        
+        
 
         removeFromScope(lookDownRef);
 
         material.opacity = 1.0;
 
         addToScope(animate(400,function(p){
+          
+          console.log("p")
+          console.log(p)
+          
           var s = interp(p,0.85,1.0,Bezier(.33,1.78,.79,1.23));
           icon.scale.set(s,s,s);
         },0));
