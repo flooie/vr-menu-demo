@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Simple Test Example</title>
+        <title>Test</title>
         <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css" rel="stylesheet" />
-                
                 <link href="https://tools.bivrost360.com/webplayer-docs/bivrost.css?cb=2018-11-07T23:45:55.118Z" rel="stylesheet" />
                 <script src="https://tools.bivrost360.com/webplayer-docs/bivrost-min.js?cb=2018-11-07T23:45:55.118Z"></script>
                 <script type="text/javascript">
                     Bivrost.verbose=true;
                     </script>
                 <style type="text/css">
-                    body { padding-bottom: 2em; }
+                    #bivrost-container {
+                        height:100vh;
+                    }
                     </style>
                 </head>
     <body >
         
         
-        
                 
-                <bivrost-player
+                <bivrost-player id="bivrost-container"
                     loop="false"
                     autoplay="true"
                     stereoscopy="autodetect"
@@ -29,17 +29,9 @@
 
                     url="https://tools.bivrost360.com/webplayer-docs/surgery.mp4">
                 </bivrost-player>
+
                 
-            
-            <script type="text/javascript">
-                var player;
-                addEventListener("load", function() {
-                                 player=document.getElementsByTagName("bivrost-player")[0].bivrost;
-                                 });
-                </script>
-            
-        </article>
-        
+
         
     </body>
 </html>
