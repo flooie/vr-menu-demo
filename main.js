@@ -10,6 +10,7 @@ function main(root, metaScene) {
         vrDisplay = displays[0];
         if (vrDisplay.capabilities.canPresent === false) {
           document.querySelector('button#vr').disabled = true;
+          console.log("VR")
         } else {
           document.querySelector('button#vr').disabled = false;
         }
