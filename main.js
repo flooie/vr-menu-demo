@@ -105,10 +105,17 @@ function main(root, metaScene) {
         var renderer = new THREE.WebGLRenderer({
           antialias: true
         });
+      
+        var logo = document.createElement( 'iframe' );
+        
+        logo.src = "https://flooie.github.io/TestVR/";                  
 
         renderer.setSize(WIDTH, HEIGHT);
-        root.appendChild(renderer.domElement);
-
+//         root.appendChild(renderer.domElement);
+        root.appendChild(logo);
+        
+        root.appendChild("hello World")
+        
         var camera = new THREE.PerspectiveCamera(75, WIDTH / HEIGHT, 0.1, 1000);
         var controls = new THREE.VRControls(camera);
 
