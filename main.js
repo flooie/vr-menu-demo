@@ -106,9 +106,7 @@ function main(root, metaScene) {
           antialias: true
         });
       
-        var logo = document.createElement( 'iframe' );
-        
-        logo.src = "https://flooie.github.io/TestVR/";                  
+        console.log("set size main 1 main.js")
 
         renderer.setSize(WIDTH, HEIGHT);
         root.appendChild(renderer.domElement);
@@ -182,6 +180,7 @@ function main(root, metaScene) {
         }
 
         function update(i) {
+        console.log("update main.js")
 
           var s = scope[i];
 
@@ -205,6 +204,8 @@ function main(root, metaScene) {
         }
 
         function realTimeUpdate(i) {
+
+                  console.log("real time update main.js")
 
           var s = scope[i];
 
@@ -235,6 +236,8 @@ function main(root, metaScene) {
         }
 
         document.addEventListener('visibilitychange', onVisibilityChange, false);
+
+                console.log("vis change main.js")
 
         // Event loop + rendering
 
@@ -299,13 +302,21 @@ function main(root, metaScene) {
 
         window.addEventListener('vrdisplaypresentchange', onVRDisplayPresentChange);
 
+                console.log("present change in main.js")
+
         function vrScreenReq() {
+          
+                  console.log("vrScreenReq main.js")
+
 
           if (!fsState.fullScreen) {
             fsHandler();
           }
 
           if (vrDisplay.capabilities.canPresent) {
+            
+                  console.log("vrDisplay.capabilities.canPresent")
+            
             vrDisplay.requestPresent([{
               source: renderer.domElement
             }]);
