@@ -378,6 +378,7 @@ function MenuScene(){
 
   function animate(duration,iteration,value){
     
+    print("ANIMATE")
     
     return function(addToScope,lookup,removeFromScope){
 
@@ -441,6 +442,8 @@ function MenuScene(){
 
   function lookDown(addToScope,lookup,removeFromScope){
 
+        print("lookdown function")
+
     var size = 0.6;
 
     var background = new THREE.Mesh(new THREE.PlaneBufferGeometry(5.6 * size, 1.2 * size),new THREE.MeshBasicMaterial({
@@ -450,6 +453,8 @@ function MenuScene(){
       }));
 
     function makeFace(w,h,tex){
+          print("make face funciton")
+
       var geometry = new THREE.PlaneBufferGeometry(w,h);
       var material = new THREE.MeshBasicMaterial({
             map:tex
