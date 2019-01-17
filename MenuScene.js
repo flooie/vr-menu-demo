@@ -443,7 +443,7 @@ function MenuScene(){
 
   function lookDown(addToScope,lookup,removeFromScope){
 
-        print("lookdown function")
+        console.log("lookdown function")
 
     var size = 0.6;
 
@@ -454,7 +454,7 @@ function MenuScene(){
       }));
 
     function makeFace(w,h,tex){
-          print("make face funciton")
+          console.log("make face funciton")
 
       var geometry = new THREE.PlaneBufferGeometry(w,h);
       var material = new THREE.MeshBasicMaterial({
