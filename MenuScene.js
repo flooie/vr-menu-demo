@@ -656,7 +656,7 @@ function MenuScene(){
           addToScope(animate(150,function(p){
 
             var s = interp(p,1.0,0.5);
-          console.log("p")
+          console.log("ppppp")
           console.log(p)
 
             sphereVisible.scale.set(s,s,s);
@@ -676,7 +676,9 @@ function MenuScene(){
           return function(){
 
             addToScope(addVirtualScreen(choices));
-
+            console.log("choices")
+            console.log(choices)
+            
             return function(){
               console.log("OK are we called here?")
               activateBall();
