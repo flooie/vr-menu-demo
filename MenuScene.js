@@ -719,7 +719,8 @@ function MenuScene(){
         var material = new THREE.MeshBasicMaterial({
           color:interpColor(0.5,0x0,royalBlue)
         , transparent:true
-        , opacity:0.5
+        , opacity:1.0
+//         , opacity:0.5
         });
 
         var aimer = new THREE.Mesh( geometry, material );
