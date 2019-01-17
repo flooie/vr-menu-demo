@@ -413,6 +413,10 @@ function MenuScene(){
 
     return function(addToScope,lookup,removeFromScope){
 
+      
+              console.log("lookup")
+              console.log(lookup)
+
       var s = {
         i:0,
         forward:true
@@ -572,6 +576,9 @@ function MenuScene(){
             icon.position.y = baseICY + magnitude * p;
             shadow.material.opacity = shadowOpacity - 0.12 * p;
             shadow.position.z = baseSHZ + magnitude * 0.02 * (p * p);
+
+              console.log(icon)
+            
 
             var s = 0.98 + 0.012 * (p * p);
 
