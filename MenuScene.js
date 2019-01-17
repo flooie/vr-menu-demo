@@ -378,7 +378,8 @@ function MenuScene(){
 
   function animate(duration,iteration,value){
     
-    print("ANIMATE")
+    console.log("ANIMATE")
+    console.log(value)
     
     return function(addToScope,lookup,removeFromScope){
 
@@ -485,8 +486,8 @@ function MenuScene(){
     icon.position.x = -1.3;
 
     addToScope(animate(400,function(p){},0));
-          console.log("another location")
 
+    
     return {
         obj:[background]
       , handle:function(){
