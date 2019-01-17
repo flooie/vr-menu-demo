@@ -160,8 +160,7 @@ function main(root, metaScene) {
 
         function lookup(i) {
           
-          console.log("LOOKUP")
-          console.log(i)
+          console.log(scope[i])
           return scope[i];
         }
 
