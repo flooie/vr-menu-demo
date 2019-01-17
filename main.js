@@ -52,6 +52,8 @@ function main(root, metaScene) {
     }
   }
 
+  console.log(retrieveDeps)
+  
   var shadersReq = retrieveDeps(function(x) {
     return 'shaders/' + x + '.glsl'
   })(metaScene.shaders)(loadResource);
