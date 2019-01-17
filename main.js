@@ -180,7 +180,7 @@ function main(root, metaScene) {
         }
 
         function update(i) {
-        console.log("update main.js")
+//         console.log("update main.js")
 
           var s = scope[i];
 
@@ -205,7 +205,7 @@ function main(root, metaScene) {
 
         function realTimeUpdate(i) {
 
-                  console.log("real time update main.js")
+//                   console.log("real time update main.js")
 
           var s = scope[i];
 
