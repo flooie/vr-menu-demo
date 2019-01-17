@@ -325,8 +325,13 @@ function MenuScene(){
 
       // panels
 
+          console.log(models)
+
       var panels = models[2].map(function(x,i){return addToScope(addPanel(x,choices[i],i))});
       panels.map(lookup).forEach(function(x){
+        
+                console.log(x)
+
         for(var i=0;i<x.object.obj.length;i++){
           x.object.obj[i].position.z = zAnimOffset;
         }
@@ -337,6 +342,11 @@ function MenuScene(){
         screen.material.opacity = interp(p,0.0,screenOpacity);
         skeleton.material.opacity = interp(p,0.0,skeletonOpacity);
 
+        console.log("screen")
+        console.log("skeleton")
+        console.log(screen)
+        console.log(skeleton)
+        
         screen.position.z = interp(p,zAnimOffset,zRestingOffset);
         skeleton.position.z = interp(p,zAnimOffset,zRestingOffset);
 
