@@ -259,6 +259,9 @@ function MenuScene(){
   }
 
   function addVirtualScreen(choices){
+    
+    console.log("addVirtualScreen")
+    
     return function(addToScope,lookup,removeFromScope){
 
       var zRestingOffset = -0.8;
@@ -371,6 +374,8 @@ function MenuScene(){
   }
 
   function animate(duration,iteration,value){
+    
+    
     return function(addToScope,lookup,removeFromScope){
 
       var s = {
@@ -400,6 +405,9 @@ function MenuScene(){
   }
 
   function pingPongAnimate(duration,iteration){
+    
+        console.log("pingPongAnimate")
+
     return function(addToScope,lookup,removeFromScope){
 
       var s = {
@@ -551,6 +559,9 @@ function MenuScene(){
         (function(){
           // hover animation to accent depth
 
+                  console.log("activate ball")
+
+          
           var magnitude = 0.03;
 
           addToScope(pingPongAnimate(2000,function(p){
