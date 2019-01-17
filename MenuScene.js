@@ -646,8 +646,6 @@ function MenuScene(){
 
         addToScope(animate(400,function(p){
           
-          console.log("p")
-          console.log(p)
           
           var s = interp(p,0.85,1.0,Bezier(.33,1.78,.79,1.23));
           icon.scale.set(s,s,s);
@@ -658,6 +656,8 @@ function MenuScene(){
           addToScope(animate(150,function(p){
 
             var s = interp(p,1.0,0.5);
+          console.log("p")
+          console.log(p)
 
             sphereVisible.scale.set(s,s,s);
             icon.scale.set(s,s,s);
