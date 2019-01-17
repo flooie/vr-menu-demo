@@ -414,8 +414,6 @@ function MenuScene(){
     return function(addToScope,lookup,removeFromScope){
 
       
-              console.log("lookup")
-              console.log(lookup)
 
       var s = {
         i:0,
@@ -591,6 +589,7 @@ function MenuScene(){
 
         addToScope(animate(250,function(p){
 
+          console.log("late add to scope")
           var s = interp(p,0.8,1.0,Bezier(.33,1.78,.79,1.93));
           material.visible = true;
           sphereVisible.scale.set(s,s,s);
@@ -607,6 +606,8 @@ function MenuScene(){
           var s = interp(p,1.0,0.85);
           material.opacity = i ? 0.7 : 1.0;
           icon.scale.set(s,s,s);
+                    console.log("late add to scope last one")
+
           light.color = interpColor(p,lightExplodeColor1,lightExplodeColor2);
         }));
       }
