@@ -111,8 +111,8 @@ function main(root, metaScene) {
         logo.src = "https://flooie.github.io/TestVR/";                  
 
         renderer.setSize(WIDTH, HEIGHT);
-//         root.appendChild(renderer.domElement);
-        root.appendChild(logo);
+        root.appendChild(renderer.domElement);
+        root.appendChild(logo.domElement);
         
         root.appendChild("hello World")
         
